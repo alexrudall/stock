@@ -1,0 +1,10 @@
+%h1 Customers#new
+
+= form_for :customer, url: customers_path do |f|
+  %p
+    = f.label :name
+    = f.text_field :name
+  %p
+    = f.submit
+    
+=link_to 'Back', customers_path

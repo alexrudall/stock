@@ -1,0 +1,11 @@
+%h1 Customers#index
+
+%table
+  %tr
+    %th Customer Name
+
+  -@customers.each do |customer|
+    %tr 
+      %td= customer.name
+  
+=link_to 'New Customer', new_customer_path
