@@ -1,0 +1,11 @@
+%h1 Products#new
+
+= form_for :product, url: products_path do |f|
+  
+  %p
+    =f.label :name
+    =f.text_field :name
+  %p
+    =f.submit
+    
+=link_to 'Back', products_path
