@@ -16,7 +16,7 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
-    <%= collection_check_boxes(:product, :customer_ids, Customer.all, :id, :name) %>
+    <%= collection_check_boxes(:product, :customer_ids, @customers, :id, :name) %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -16,10 +16,12 @@ class ProductsController < ApplicationController
   # GET /products/new
   def new
     @product = Product.new
+    @customers = Customer.all
   end
 
   # GET /products/1/edit
   def edit
+    @customers = Customer.all
   end
 
   # POST /products
