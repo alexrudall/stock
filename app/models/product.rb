@@ -1,7 +1,5 @@
 class Product < ActiveRecord::Base
   
-  belongs_to :customer
-  
-  validates :name, uniqueness: true
+  has_and_belongs_to_many :customers
   
 end
